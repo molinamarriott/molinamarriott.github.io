@@ -13,3 +13,12 @@
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+.visualization-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
