@@ -14,19 +14,26 @@
     text-decoration: underline;
 }
 
-.visualization-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid #eee;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+.visualization-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    justify-content: center;
+    gap: 20px; /* Espaciado entre elementos */
+    max-width: 100%; /* Asegura que el contenedor no se desborde */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+.visualization-item {
+    flex: 1 1 300px; /* Establece un tamaño base para cada visualización */
+    max-width: 300px; /* Limita el tamaño máximo de cada visualización */
+    text-align: center; /* Centra el contenido */
 }
 
 .visualization-item img {
-    max-width: 100%;  /* Esto asegura que la imagen nunca sea más ancha que su contenedor */
-    height: auto;      /* Mantiene la proporción original de la imagen */
-    display: block;    /* Elimina espacios extraños debajo de la imagen */
-    margin: 0 auto;    /* Centra la imagen horizontalmente */
-    border-radius: 4px; /* Bordes redondeados (opcional) */
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción */
+    max-width: 100%; /* Asegura que la imagen no se agrande más del contenedor */
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
 }
+
