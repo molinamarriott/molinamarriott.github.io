@@ -14,26 +14,100 @@
     text-decoration: underline;
 }
 
+/* Estilos para el visualizador de imágenes */
+.slider-container {
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
 
-.visualization-container {
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se reacomoden si no caben */
-    justify-content: center; /* Centra las imágenes */
-    gap: 10px; /* Espaciado entre elementos */
-    overflow: hidden; /* Evita que se desborde el contenido */
+    transition: transform 0.5s ease;
+    height: 500px; /* Ajusta según el tamaño que prefieras */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .visualization-item {
-    max-width: 100%; /* Se asegura de que los elementos no se salgan */
-    text-align: center; /* Centra el texto */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visualization-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .visualization-item img {
-    max-width: 100%; /* Evita que las imágenes se desborden */
-    height: auto; /* Mantiene la proporción */
-    display: block; /* Elimina espacios en línea */
+    max-width: 90%;
+    max-height: 350px; /* Ajusta este valor según tus necesidades */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    border-radius: 4px;
 }
 
+.viz-description {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--light-text-color);
+}
 
+/* Navegación del slider */
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slider-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-button:hover {
+    background-color: var(--primary-color);
+}
+
+.slider-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: var(--secondary-color);
+}
 
 
