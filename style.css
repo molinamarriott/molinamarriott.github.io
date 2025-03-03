@@ -17,26 +17,21 @@
 
 .visualization-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
-    justify-content: center;
-    gap: 20px; /* Espaciado entre elementos */
-    max-width: 100%; /* Asegura que el contenedor no se desborde */
-    overflow: hidden; /* Evita desbordamientos */
+    flex-wrap: wrap; /* Permite que las imágenes se reacomoden si no caben */
+    justify-content: center; /* Centra las imágenes */
+    gap: 10px; /* Espaciado entre elementos */
+    overflow: hidden; /* Evita que se desborde el contenido */
 }
 
 .visualization-item {
-    flex: 1 1 300px; /* Establece un tamaño base para cada visualización */
-    max-width: 300px; /* Limita el tamaño máximo de cada visualización */
-    text-align: center; /* Centra el contenido */
+    max-width: 100%; /* Se asegura de que los elementos no se salgan */
+    text-align: center; /* Centra el texto */
 }
 
-
 .visualization-item img {
-    max-width: 100%;  /* Esto asegura que la imagen nunca sea más ancha que su contenedor */
-    height: auto;      /* Mantiene la proporción original de la imagen */
-    display: block;    /* Elimina espacios extraños debajo de la imagen */
-    margin: 0 auto;    /* Centra la imagen horizontalmente */
-    border-radius: 4px; /* Bordes redondeados (opcional) */
+    max-width: 100%; /* Evita que las imágenes se desborden */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacios en línea */
 }
 
 
