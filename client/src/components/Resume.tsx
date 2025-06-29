@@ -141,6 +141,7 @@ export function Resume() {
                   <div className="mt-4">
                     <p className="font-semibold mb-2">Premios:</p>
                     <ul className="space-y-1 text-sm list-disc list-inside">
+                      <li>Primer lugar en el Hackathon del Comité Latinoamericano de Auditoría Interna y Evaluación de Riesgos (2025)</li>
                       <li>Tercer lugar en el concurso de investigación Corsino Cardenas (2022)</li>
                       <li>Segundo lugar en el Hackaton PyWeekend ESPOL (2018)</li>
                     </ul>
