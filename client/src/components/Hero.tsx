@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
 import { ParticlesBackground } from "./ParticlesBackground";
 
 export function Hero() {
@@ -20,7 +21,26 @@ export function Hero() {
   </h2>
 
   <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-    Economist & Data Scientist
+    <TypeAnimation
+      sequence={[
+        'Economist & Data Scientist',
+        2000,
+        'Economist & Data Scientist',
+        2000
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      speed={50}
+      style={{
+        fontSize: '2.5rem',
+        fontWeight: 'bold',
+        background: 'linear-gradient(to right, var(--primary), rgba(var(--primary-rgb), 0.7))',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent'
+      }}
+      className="text-4xl md:text-6xl"
+    />
   </h1>
 
   <p className="text-lg md:text-xl text-muted-foreground mb-8">
