@@ -1,8 +1,9 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, Sun, Moon } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import { useDarkMode } from "@/contexts/DarkModeContext";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -13,6 +14,7 @@ const navItems = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b">
@@ -34,6 +36,18 @@ export function Navbar() {
               {item.name}
             </a>
           ))}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => toggleDarkMode()}
+            className="ml-2"
+          >
+            {isDarkMode ? (
+              <Sun className="h-5 w-5" />
+            ) : (
+              <Moon className="h-5 w-5" />
+            )}
+          </Button>
         </div>
 
         {/* Mobile Menu */}
