@@ -79,7 +79,7 @@ export function Resume() {
                     />
                     <div>
                       <h3 className="font-semibold">Master's degree, Inteligencia Analítica de Datos</h3>
-                      <p className="text-sm text-muted-foreground">Ene 2023 - Presente | Universidad de Los Andes - Colombia</p>
+                      <p className="text-sm text-muted-foreground">Ene 2023 - Jul 2025 | Universidad de Los Andes - Colombia</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -91,6 +91,17 @@ export function Resume() {
                     <div>
                       <h3 className="font-semibold">Diplomatura, Data Science and Artificial Intelligence</h3>
                       <p className="text-sm text-muted-foreground">Feb 2023 - Sep 2023 | Tecnológico de Monterrey</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <img
+                      src="https://www.universidata.es/sites/default/files/styles/group_medium/public/uam_0.png"
+                      alt="Universidad Autónoma de Madrid"
+                      className="h-12 w-auto object-contain"
+                    />
+                    <div>
+                      <h3 className="font-semibold">Master's degree, Economics</h3>
+                      <p className="text-sm text-muted-foreground">Sep 2025 - Presente | Universidad Autónoma de Madrid</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
