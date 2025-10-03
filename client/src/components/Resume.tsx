@@ -25,16 +25,16 @@ export function Resume() {
               <CardContent>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-semibold">Oficial Senior de Metodologías y Modelos de Riesgos</h3>
+                    <h3 className="font-semibold">Especialista Senior de Metodologías y Modelos de Riesgos</h3>
                     <p className="text-sm text-muted-foreground">Abr 2023 - Presente | Banco Guayaquil</p>
                     <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
                       <li>Lideré la creación de un sistema de modelos predictivos de morosidad de corto plazo para el diseño de estrategias de cobranza.</li>
-                      <li>Lideré un proyecto de creación de un sistema de provisión bajo la normativa NIIF9 para la cartera comercial.</li>
+                      <li>Lideré un proyecto de creación de un sistema de provisión bajo la normativa IFRS9 para la cartera comercial.</li>
                       <li>Diseñé esquemas de backtesting para evaluar el desempeño y la estabilidad en producción de productos analíticos.</li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-semibold">Oficial de Metodologías y Modelos de Riesgos</h3>
+                    <h3 className="font-semibold">Especialista de Metodologías y Modelos de Riesgos</h3>
                     <p className="text-sm text-muted-foreground">Oct 2021 - Abr 2023 | Banco Guayaquil</p>
                     <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
                       <li>Utilización de tecnologías de Big Data como SparklyR, PySpark, Hive, R Studio Server, etc.</li>
