@@ -25,8 +25,17 @@ export function Resume() {
               <CardContent>
                 <div className="space-y-6">
                   <div>
+                    <h3 className="font-semibold">Especialista en Business Intelligence</h3>
+                    <p className="text-sm text-muted-foreground">Nov 2025 - Presente | Novomatic</p>
+                    <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
+                      <li>Desarrollo e implementación de soluciones de inteligencia de negocios para la toma de decisiones estratégicas.</li>
+                      <li>Creación de dashboards interactivos y reportes analíticos para diferentes áreas de la organización.</li>
+                      <li>Automatización de procesos de análisis de datos y generación de informes.</li>
+                    </ul>
+                  </div>
+                  <div>
                     <h3 className="font-semibold">Especialista Senior de Metodologías y Modelos de Riesgos</h3>
-                    <p className="text-sm text-muted-foreground">Abr 2023 - Presente | Banco Guayaquil</p>
+                    <p className="text-sm text-muted-foreground">Abr 2023 - Sep 2025 | Banco Guayaquil</p>
                     <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
                       <li>Lideré la creación de un sistema de modelos predictivos de morosidad de corto plazo para el diseño de estrategias de cobranza.</li>
                       <li>Lideré un proyecto de creación de un sistema de provisión bajo la normativa IFRS9 para la cartera comercial.</li>
