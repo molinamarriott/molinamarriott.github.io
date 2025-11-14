@@ -56,14 +56,11 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // ALWAYS serve the app on port 5000
-  // this serves both the API and the client
-  const port = 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
+  // Serve the app on the specified port or default to 5000
+  const port = process.env.PORT || 5000;
+  const host = process.env.HOST || 'localhost';
+  
+  server.listen(port, host, () => {
+    log(`Server running at http://${host}:${port}`);
   });
 })();
